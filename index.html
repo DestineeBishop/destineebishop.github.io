@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smoking Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Smoking Tracker</h1>
+    <p>Log smoking activity, add tags, and review patterns.</p>
+
+    <section class="card">
+      <h2>Add activity</h2>
+      <form id="smokingForm">
+        <label for="cigarettes">Cigarettes smoked</label>
+        <input type="number" id="cigarettes" min="1" placeholder="e.g. 3" required />
+
+        <label for="mood">Mood</label>
+        <input type="text" id="mood" placeholder="e.g. stressed" />
+
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="e.g. work" />
+
+        <label for="people">People around you</label>
+        <input type="text" id="people" placeholder="e.g. friends" />
+
+        <label for="notes">Short note</label>
+        <textarea id="notes" rows="3" placeholder="Add a quick description"></textarea>
+
+        <button type="submit">Save entry</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Dashboard</h2>
+      <div id="summary"></div>
+      <ul id="entries"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
